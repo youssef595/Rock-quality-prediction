@@ -1,0 +1,20 @@
+Models,Train_RMSE_LAB,Test_RMSE_LAB,Train_RMSE_HOT,Test_RMSE_HOT
+LinearRegression(),5.812,5.843,3.294,6.636
+LinearRegression() AFTER Backward Elimination,5.813,5.842,,
+LinearRegression() - ouliers,3.181,4.046,3.203,4.284
+RandomForestRegressor(),1.2,3.367,1.164,3.264
+RandomForestRegressor() - least important features,,,1.174,3.248
+RandomForestRegressor() - ouliers,1.242,3.104,1.24,2.965
+LGBMRegressor(),2.499,3.188,2.395,3.198
+LGBMRegressor() - least important features,,,2.395,3.198
+LGBMRegressor() - ouliers,2.109,2.942,2.43,2.952
+LGBMRegressor(TUNNED),,,2.161,3.286
+CatBoostRegressor(),2.261,3.172,2.396,3.2
+CatBoostRegressor() - least important features,,,2.408,3.218
+CatBoostRegressor() - ouliers,2.268,2.895,2.498,2.989
+CatBoostRegressor(TUNNED_1),,,1.763,3.079
+CatBoostRegressor(TUNNED_2),,,1.703,3.189
+"CatBoostRegressor(TUNNED_1) - [CMM, CM]",,,1.2,3.02
+Blending LGBMRegressor(TUNNED) AND CatBoostRegressor(TUNNED_1),,,1.718,3.041
+Blending CatBoostRegressor(TUNNED_1) AND CatBoostRegressor(TUNNED_2),,,1.153,2.976
+Cross Val - CatBoostRegressor(TUNNED_1),,,1.883,2.69
